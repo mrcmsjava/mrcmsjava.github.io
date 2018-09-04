@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>@JSONPaserDirective · GitBook</title>
+        <title>子栏目遍历标签 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="extends.md" />
+    <link rel="next" href="taglib03.html" />
     
     
-    <link rel="prev" href="taglibh03.html" />
+    <link rel="prev" href="taglib01.html" />
     
 
     </head>
@@ -294,7 +294,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.2" data-path="taglib02.html">
+        <li class="chapter active" data-level="3.4.2" data-path="taglib02.html">
             
                 <a href="taglib02.html">
             
@@ -495,7 +495,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.5.4" data-path="index2.html">
+        <li class="chapter " data-level="3.5.4" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -577,7 +577,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.8" data-path="index2.html">
+        <li class="chapter " data-level="3.8" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -662,7 +662,7 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="index2.html">
+        <li class="chapter " data-level="5.1" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -695,7 +695,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="index2.html">
+        <li class="chapter " data-level="6.2" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -708,7 +708,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.3" data-path="index2.html">
+        <li class="chapter " data-level="6.3" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -771,7 +771,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >@JSONPaserDirective</a>
+        <a href="." >子栏目遍历标签</a>
     </h1>
 </div>
 
@@ -786,8 +786,25 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x4E3B;&#x754C;&#x9762;2">&#x4E3B;&#x754C;&#x9762;2</h3>
-
+                                <h1 id="&#x5B50;&#x680F;&#x76EE;&#x904D;&#x5386;&#x6807;&#x7B7E;">&#x5B50;&#x680F;&#x76EE;&#x904D;&#x5386;&#x6807;&#x7B7E;</h1>
+<p>&#x904D;&#x5386;&#x5F53;&#x524D;&#x680F;&#x76EE;&#x4E0B;&#x7684;&#x5B50;&#x680F;&#x76EE;&#xFF0C;&#x5E38;&#x7528;&#x8BED;&#x9996;&#x9875;&#x610F;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x4E00;&#x7EA7;&#x680F;&#x76EE;&#x5C55;&#x793A;&#x5176;&#x4E00;&#x7EA7;&#x4E0B;&#x7684;&#x4E8C;&#x7EA7;&#x680F;&#x76EE;&#x3002;</p>
+<p>&#x4EE3;&#x7801;&#x4F8B;&#x5B50;&#x5982;&#x4E0B;</p>
+<pre><code>&lt;ul&gt;
+&lt;!-- {c:channel} --&gt;
+&lt;li&gt;&lt;a href=&quot;${c.url}&quot;&gt;${c.name}&lt;/a&gt;&lt;/li&gt;
+&lt;!-- {/list} --&gt;
+&lt;/ul&gt;
+</code></pre><p>&#x540E;&#x53F0;&#x680F;&#x76EE;&#x7BA1;&#x7406;&#x529F;&#x80FD;&#x5173;&#x4E8E;&#x6211;&#x4EEC;&#x9875;&#x9762;&#x5B50;&#x680F;&#x76EE;&#x5982;&#x4E0B;&#x56FE;&#x7EA2;&#x8272;&#x77E9;&#x5F62;&#x5708;&#x51FA;&#x6765;&#x7684;&#x680F;&#x76EE;&#x3002;
+<img src="_image/2018-08-12/2018-08-13-22-22-37.png" alt=""></p>
+<p>&#x901A;&#x8FC7;&#x8BBF;&#x95EE;&#x5173;&#x4E8E;&#x6211;&#x4EEC;&#x9875;&#x9762;&#xFF0C;&#x8F93;&#x51FA;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>&lt;ul&gt;    
+    &lt;li&gt;&lt;a href=&quot;http://localhost:8080/about/us.html&quot;&gt;&#x5173;&#x4E8E;&#x6211;&#x4EEC;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://localhost:8080/about/gainian.html&quot;&gt;&#x4EA7;&#x54C1;&#x6982;&#x5FF5;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://localhost:8080/about/team.html&quot;&gt;&#x8611;&#x83C7;&#x56E2;&#x961F;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://localhost:8080/about/concat.html&quot;&gt;&#x8054;&#x7CFB;&#x6211;&#x4EEC;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;http://localhost:8080/about/joinUs.html&quot;&gt;&#x52A0;&#x5165;&#x6211;&#x4EEC;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
                                 
                                 </section>
                             
@@ -814,12 +831,12 @@
 
             
                 
-                <a href="taglibh03.html" class="navigation navigation-prev " aria-label="Previous page: @Boostrap3Nav">
+                <a href="taglib01.html" class="navigation navigation-prev " aria-label="Previous page: URL绝对路径标签">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="extends.md" class="navigation navigation-next " aria-label="Next page: 扩展支持">
+                <a href="taglib03.html" class="navigation navigation-next " aria-label="Next page: 执行时间标签">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -830,7 +847,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"@JSONPaserDirective","level":"3.5.4","depth":2,"next":{"title":"扩展支持","level":"3.6","depth":1,"path":"extends.md","ref":"extends.md","articles":[{"title":"栏目分页查询数据","level":"3.6.1","depth":2,"path":"ext/extpage.md","ref":"ext/extpage.md","articles":[]}]},"previous":{"title":"@Boostrap3Nav","level":"3.5.3","depth":2,"path":"taglibh03.md","ref":"taglibh03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"index2.md","mtime":"2018-08-11T08:45:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"子栏目遍历标签","level":"3.4.2","depth":2,"next":{"title":"执行时间标签","level":"3.4.3","depth":2,"path":"taglib03.md","ref":"taglib03.md","articles":[]},"previous":{"title":"URL绝对路径标签","level":"3.4.1","depth":2,"path":"taglib01.md","ref":"taglib01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"taglib02.md","mtime":"2018-08-13T14:24:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

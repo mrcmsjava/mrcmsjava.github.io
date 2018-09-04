@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>@JSONPaserDirective · GitBook</title>
+        <title>URL绝对路径标签 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="extends.md" />
+    <link rel="next" href="taglib02.html" />
     
     
-    <link rel="prev" href="taglibh03.html" />
+    <link rel="prev" href="taglibs.html" />
     
 
     </head>
@@ -281,7 +281,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.4.1" data-path="taglib01.html">
+        <li class="chapter active" data-level="3.4.1" data-path="taglib01.html">
             
                 <a href="taglib01.html">
             
@@ -495,7 +495,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.5.4" data-path="index2.html">
+        <li class="chapter " data-level="3.5.4" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -577,7 +577,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.8" data-path="index2.html">
+        <li class="chapter " data-level="3.8" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -662,7 +662,7 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="index2.html">
+        <li class="chapter " data-level="5.1" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -695,7 +695,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="index2.html">
+        <li class="chapter " data-level="6.2" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -708,7 +708,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.3" data-path="index2.html">
+        <li class="chapter " data-level="6.3" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -771,7 +771,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >@JSONPaserDirective</a>
+        <a href="." >URL绝对路径标签</a>
     </h1>
 </div>
 
@@ -786,7 +786,30 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x4E3B;&#x754C;&#x9762;2">&#x4E3B;&#x754C;&#x9762;2</h3>
+                                <h1 id="url&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6807;&#x7B7E;">URL&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x6807;&#x7B7E;</h1>
+<p>URL&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#x91CD;&#x5199;&#x6807;&#x7B7E; &#x4F5C;&#x7528;&#x4E8E;&#x4E3B;&#x9898;&#x76EE;&#x5F55;&#xFF1A;images&#x3001;css&#x3001;js &#x6587;&#x4EF6;&#x5939;</p>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x8FD9;&#x4E48;&#x505A;&#xFF1F;</p>
+<ol>
+<li>&#x5229;&#x4E8E;&#x7F51;&#x7EDC;&#x722C;&#x866B;&#x5B50;&#x6293;&#x53D6;&#x9875;&#x9762;</li>
+<li>&#x6A21;&#x677F;&#x9875;&#x9762;&#x5F15;&#x7528;&#x6A21;&#x677F;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x7684;&#x56FE;&#x7247;</li>
+<li>&#x5229;&#x4E8E;&#x6A21;&#x677F;&#x9875;&#x9762;&#x5F00;&#x53D1;&#xFF0C;&#x63D0;&#x9AD8;&#x5DE5;&#x4F5C;&#x6548;&#x7387;</li>
+<li>&#x907F;&#x514D;&#x5199;&#x6B7B;&#x94FE;&#x63A5;&#xFF0C;&#x63D0;&#x9AD8;&#x6A21;&#x677F;&#x53EF;&#x7EF4;&#x62A4;&#x6027;</li>
+</ol>
+<h3 id="&#x81EA;&#x52A8;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x6848;&#x4F8B;">&#x81EA;&#x52A8;&#x5904;&#x7406;&#x4EE3;&#x7801;&#x6848;&#x4F8B;</h3>
+<p>&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x4F1A;&#x81EA;&#x52A8;&#x5904;&#x7406;js&#x3001;css&#x3001;&#x56FE;&#x7247;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x3002;</p>
+<pre><code>  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/main.css&quot; /&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;js/core.js&quot;&gt;&lt;/script&gt;
+  &lt;a href=&quot;index.html&quot;&gt;&#x8D85;&#x7EA7;&#x94FE;&#x63A5;&lt;/a&gt;
+  &lt;img src=&quot;images/a.png&quot; alt=&quot;&#x56FE;&#x7247;&#x63CF;&#x8FF0;&quot; /&gt;
+</code></pre><p>&#x8F93;&#x51FA;HTML&#x4EE3;&#x7801; &#x5047;&#x8BBE;&#x7F51;&#x7AD9;&#x90E8;&#x7F72;&#x5728;ROOT&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;<a href="http://www.yl-blog.com/" target="_blank">http://www.yl-blog.com/</a></p>
+<pre><code> &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;http://www.yl-blog.com/css/main.css&quot; /&gt;
+  &lt;script type=&quot;text/javascript&quot; src=&quot;http://www.yl-blog.com/js/core.js&quot;&gt;&lt;/script&gt;
+  &lt;a href=&quot;http://www.yl-blog.com/index.html&quot;&gt;&#x8D85;&#x7EA7;&#x94FE;&#x63A5;&lt;/a&gt;
+  &lt;img src=&quot;http://www.yl-blog.com/images/a.png&quot; alt=&quot;&#x56FE;&#x7247;&#x63CF;&#x8FF0;&quot; /&gt;
+</code></pre><h3 id="&#x624B;&#x52A8;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;">&#x624B;&#x52A8;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;</h3>
+<p>&#x6A21;&#x677F;&#x5F15;&#x64CE;&#x901A;&#x8FC7;MVC&#x65B9;&#x5F0F;&#x53D1;&#x9001;&#x4E00;&#x7CFB;&#x5217;&#x6570;&#x636E;&#x5230;&#x6A21;&#x677F;&#x9875;&#x9762;&#x3002; &#x4F7F;&#x7528;&#x65B9;&#x5F0F;:</p>
+<pre><code> &lt;a href=&quot;${url!}/index.html&quot;&gt;&#x8D85;&#x7EA7;&#x94FE;&#x63A5;&lt;/a&gt;
+</code></pre><p>&#x5982;&#x679C;&#x9879;&#x76EE;&#x90E8;&#x7F72;&#x5728;CMS&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#xFF0C;&#x5219;${url!} = &quot;<a href="http://www.yl-blog.com/CMS/" target="_blank">http://www.yl-blog.com/CMS/</a>&quot;</p>
 
                                 
                                 </section>
@@ -814,12 +837,12 @@
 
             
                 
-                <a href="taglibh03.html" class="navigation navigation-prev " aria-label="Previous page: @Boostrap3Nav">
+                <a href="taglibs.html" class="navigation navigation-prev " aria-label="Previous page: 系统内置标签">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="extends.md" class="navigation navigation-next " aria-label="Next page: 扩展支持">
+                <a href="taglib02.html" class="navigation navigation-next " aria-label="Next page: 子栏目遍历标签">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -830,7 +853,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"@JSONPaserDirective","level":"3.5.4","depth":2,"next":{"title":"扩展支持","level":"3.6","depth":1,"path":"extends.md","ref":"extends.md","articles":[{"title":"栏目分页查询数据","level":"3.6.1","depth":2,"path":"ext/extpage.md","ref":"ext/extpage.md","articles":[]}]},"previous":{"title":"@Boostrap3Nav","level":"3.5.3","depth":2,"path":"taglibh03.md","ref":"taglibh03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"index2.md","mtime":"2018-08-11T08:45:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"URL绝对路径标签","level":"3.4.1","depth":2,"next":{"title":"子栏目遍历标签","level":"3.4.2","depth":2,"path":"taglib02.md","ref":"taglib02.md","articles":[]},"previous":{"title":"系统内置标签","level":"3.4","depth":1,"path":"taglibs.md","ref":"taglibs.md","articles":[{"title":"URL绝对路径标签","level":"3.4.1","depth":2,"path":"taglib01.md","ref":"taglib01.md","articles":[]},{"title":"子栏目遍历标签","level":"3.4.2","depth":2,"path":"taglib02.md","ref":"taglib02.md","articles":[]},{"title":"执行时间标签","level":"3.4.3","depth":2,"path":"taglib03.md","ref":"taglib03.md","articles":[]},{"title":"时间格式化标签","level":"3.4.4","depth":2,"path":"taglib04.md","ref":"taglib04.md","articles":[]},{"title":"条件判断标签","level":"3.4.5","depth":2,"path":"taglib05.md","ref":"taglib05.md","articles":[]},{"title":"遍历集合标签","level":"3.4.6","depth":2,"path":"taglib06.md","ref":"taglib06.md","articles":[]},{"title":"遍历栏目下的内容标签","level":"3.4.7","depth":2,"path":"taglib07.md","ref":"taglib07.md","articles":[]},{"title":"插件调用标签","level":"3.4.8","depth":2,"path":"taglib08.md","ref":"taglib08.md","articles":[]},{"title":"在线人数标签","level":"3.4.9","depth":2,"path":"taglib09.md","ref":"taglib09.md","articles":[]},{"title":"执行SQL标签","level":"3.4.10","depth":2,"path":"taglib10.md","ref":"taglib10.md","articles":[]},{"title":"字符串截取标签","level":"3.4.11","depth":2,"path":"taglib11.md","ref":"taglib11.md","articles":[]},{"title":"URL重写标签","level":"3.4.12","depth":2,"path":"taglib12.md","ref":"taglib12.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"taglib01.md","mtime":"2018-08-12T09:00:43.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

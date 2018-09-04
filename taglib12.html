@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>@JSONPaserDirective · GitBook</title>
+        <title>URL重写标签 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="extends.md" />
+    <link rel="next" href="taglibh.html" />
     
     
-    <link rel="prev" href="taglibh03.html" />
+    <link rel="prev" href="taglib11.html" />
     
 
     </head>
@@ -424,7 +424,7 @@
             
         </li>
     
-        <li class="chapter " data-level="3.4.12" data-path="taglib12.html">
+        <li class="chapter active" data-level="3.4.12" data-path="taglib12.html">
             
                 <a href="taglib12.html">
             
@@ -495,7 +495,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.5.4" data-path="index2.html">
+        <li class="chapter " data-level="3.5.4" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -577,7 +577,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.8" data-path="index2.html">
+        <li class="chapter " data-level="3.8" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -662,7 +662,7 @@
         
         
     
-        <li class="chapter active" data-level="5.1" data-path="index2.html">
+        <li class="chapter " data-level="5.1" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -695,7 +695,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.2" data-path="index2.html">
+        <li class="chapter " data-level="6.2" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -708,7 +708,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.3" data-path="index2.html">
+        <li class="chapter " data-level="6.3" data-path="index2.html">
             
                 <a href="index2.html">
             
@@ -771,7 +771,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >@JSONPaserDirective</a>
+        <a href="." >URL重写标签</a>
     </h1>
 </div>
 
@@ -786,7 +786,44 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x4E3B;&#x754C;&#x9762;2">&#x4E3B;&#x754C;&#x9762;2</h3>
+                                <h1 id="url&#x91CD;&#x5199;&#x6807;&#x7B7E;">URL&#x91CD;&#x5199;&#x6807;&#x7B7E;</h1>
+<p> &#x5BF9;URL&#x8FDB;&#x884C;&#x91CD;&#x5199;&#x5E76;&#x9759;&#x6001;&#x5316;&#x5730;&#x5740;&#xFF0C;&#x57FA;&#x4E8E;SEO&#x914D;&#x7F6E;&#x751F;&#x6210;&#x3002;</p>
+<h3 id="&#x6A21;&#x677F;&#x4E2D;&#x5E94;&#x7528;&#x6807;&#x7B7E;">&#x6A21;&#x677F;&#x4E2D;&#x5E94;&#x7528;&#x6807;&#x7B7E;</h3>
+<ul>
+<li><p>&#x6A21;&#x677F;&#x6807;&#x7B7E;&#x4EE3;&#x7801;</p>
+<pre><code>   &lt;!-- {c:list table=(channel) pid=(3) order=(id asc)} --&gt;
+         &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+           &lt;div class=&quot;thumbnail&quot;&gt;
+             &lt;img src=&quot;${themeurl}${c.icon!}&quot; alt=&quot;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x56FE;&#x7247;&#x4FE1;&#x606F;&quot; style=&quot;height:100px; width:100%;&quot;&gt;
+             &lt;div class=&quot;caption&quot;&gt;
+               &lt;h3&gt;${c.name!}&lt;/h3&gt;
+               &lt;p&gt;${c.description!}&lt;/p&gt;
+               &lt;p&gt;&lt;a href=&quot;${c.url}&quot; class=&quot;btn btn_mrcms&quot; role=&quot;button&quot;&gt;&#x770B;&#x6587;&#x6863;&#x53BB;&#x54AF;&lt;/a&gt;&lt;/p&gt;
+             &lt;/div&gt;
+           &lt;/div&gt;
+         &lt;/div&gt;
+   &lt;!--{/list}--&gt;
+</code></pre></li>
+<li><p>&#x8F93;&#x51FA;HTML&#x4EE3;&#x7801;</p>
+<p>  <code>&#x5047;&#x8BBE;&#x7F51;&#x7AD9;&#x90E8;&#x7F72;&#x5728;ROOT&#x76EE;&#x5F55;&#x91CC;&#xFF0C;&#x7F51;&#x5740;&#x4E3A;&#xFF1A;http://www.yl-blog.com/</code></p>
+<pre><code>  &lt;div class=&quot;col-sm-6 col-md-4&quot;&gt;
+      &lt;div class=&quot;thumbnail&quot;&gt; 
+          &lt;img src=&quot;http://localhost:8083/themes/flatweb/images/doc_plugin.png&quot; alt=&quot;&#x6682;&#x65F6;&#x6CA1;&#x6709;&#x56FE;&#x7247;&#x4FE1;&#x606F;&quot; style=&quot;height:100px; width:100%;&quot;&gt; 
+          &lt;div class=&quot;caption&quot;&gt; &lt;h3&gt;&#x6A21;&#x5757;&#x6587;&#x6863;&lt;/h3&gt; 
+              &lt;p&gt;&#x57FA;&#x4E8E;Groovy&#x811A;&#x672C;&#x5F00;&#x53D1;MRCMS&#x7684;&#x6A21;&#x5757;&#xFF0C;&#x662F;&#x4E0D;&#x662F;&#x5F00;&#x53D1;&#x4F53;&#x9A8C;&#x975E;&#x5E38;&#x5E2E;&#xFF0C;&#x514D;&#x53BB;&#x4E86;&#x7F16;&#x8BD1;&#x518D;&#x6D4B;&#x8BD5;&#x7684;&#x8FC7;&#x7A0B;&#x3002;&lt;/p&gt;
+              &lt;p&gt;&lt;a href=&quot;document/module&quot; class=&quot;btn btn_mrcms&quot; role=&quot;button&quot;&gt;&#x770B;&#x6587;&#x6863;&#x53BB;&#x54AF;&lt;/a&gt;&lt;/p&gt;
+          &lt;/div&gt; 
+      &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre></li>
+</ul>
+<h3 id="&#x7279;&#x522B;&#x8BF4;&#x660E;">&#x7279;&#x522B;&#x8BF4;&#x660E;</h3>
+<ol>
+<li>&#x53EA;&#x6709;&#x901A;&#x8FC7;&#x6570;&#x636E;${}&#x83B7;&#x53D6;&#x7684;URL&#x624D;&#x4F1A;&#x88AB;URL&#x91CD;&#x5199;</li>
+<li>&#x5F53;${c.url!} &#x8FD9;&#x6837;&#x5199;&#x65F6;&#xFF0C;&#x4E0D;&#x4F1A;&#x5904;&#x7406;&#x91CD;&#x5199;&#x3002;</li>
+</ol>
+<h3 id="&#x6E90;&#x4EE3;&#x7801;&#x83B7;&#x53D6;">&#x6E90;&#x4EE3;&#x7801;&#x83B7;&#x53D6;</h3>
+<p>&#x6E90;&#x4EE3;&#x7801;&#x5728;mrcms&#x6574;&#x5957;&#x6E90;&#x4EE3;&#x7801;&#x91CC;</p>
 
                                 
                                 </section>
@@ -814,12 +851,12 @@
 
             
                 
-                <a href="taglibh03.html" class="navigation navigation-prev " aria-label="Previous page: @Boostrap3Nav">
+                <a href="taglib11.html" class="navigation navigation-prev " aria-label="Previous page: 字符串截取标签">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="extends.md" class="navigation navigation-next " aria-label="Next page: 扩展支持">
+                <a href="taglibh.html" class="navigation navigation-next " aria-label="Next page: 高级指令">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -830,7 +867,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"@JSONPaserDirective","level":"3.5.4","depth":2,"next":{"title":"扩展支持","level":"3.6","depth":1,"path":"extends.md","ref":"extends.md","articles":[{"title":"栏目分页查询数据","level":"3.6.1","depth":2,"path":"ext/extpage.md","ref":"ext/extpage.md","articles":[]}]},"previous":{"title":"@Boostrap3Nav","level":"3.5.3","depth":2,"path":"taglibh03.md","ref":"taglibh03.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"index2.md","mtime":"2018-08-11T08:45:15.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"URL重写标签","level":"3.4.12","depth":2,"next":{"title":"高级指令","level":"3.5","depth":1,"path":"taglibh.md","ref":"taglibh.md","articles":[{"title":"@Nav","level":"3.5.1","depth":2,"path":"taglibh01.md","ref":"taglibh01.md","articles":[]},{"title":"@NavChild","level":"3.5.2","depth":2,"path":"taglibh02.md","ref":"taglibh02.md","articles":[]},{"title":"@Boostrap3Nav","level":"3.5.3","depth":2,"path":"taglibh03.md","ref":"taglibh03.md","articles":[]},{"title":"@JSONPaserDirective","level":"3.5.4","depth":2,"path":"index2.md","ref":"index2.md","articles":[]}]},"previous":{"title":"字符串截取标签","level":"3.4.11","depth":2,"path":"taglib11.md","ref":"taglib11.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"taglib12.md","mtime":"2018-08-12T12:23:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-04T01:50:53.778Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
